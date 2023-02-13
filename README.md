@@ -5,4 +5,5 @@ Estoy compartiendo el código de 🌴mi página web llamada "Critical"🌴. La p
 Esta Pagina la puedes recrer para una tienda o destinada al FiveM (GTAV RP)😃
 
 Web = https://critical1.netlify.app
+-
 Linkedin = https://www.linkedin.com/in/nicolas-seijas-222909263
