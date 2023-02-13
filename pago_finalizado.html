@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      .progress-bar {
+        height: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+    <script src="js/script.js"></script>
+    <title>Pago Finalizado</title>
+  </head>
+    <body id="title">
+    <div class="container text-center">
+      <h1>Tu pago a sido acreditado correctamente!!</h1>
+      <div class="container" style="text-align: center; margin-top: 50px;">
+      </div>
+      <img style="height: 320px; width: 500px;"
+        src="img/pago_proceso.gif"
+        alt="Pago en Proceso"
+      />
+    </div>
+    <p>
+        Gracias por su compra. Estamos agradecidos por su confianza a esta comunidad
+      </p>
+
+      <p id="countdown">La página volverá al inicio en <span id="time">15</span> segundos.</p>
+      <script>
+      var timeLeft = 15;
+        var countdown = document.getElementById("countdown");
+        var time = document.getElementById("time");
+        
+        var countdownInterval = setInterval(function() {
+          timeLeft--;
+          time.textContent = timeLeft;
+          if (timeLeft === 0) {
+            clearInterval(countdownInterval);
+            countdown.textContent = "La página ha vuelto al inicio.";
+            window.location.href = "/";
+          }
+        }, 1000);</script>
+      <script>
+        function redirect() {
+          window.location.href = "index.html";
+        }
+        setTimeout(redirect, 15000); // Redirigirá después de 4 segundos
+      </script>
+          
+    <footer class="neon-box">
+      <hr>
+       <p>Síguenos en nuestras redes sociales:</p>
+      <a href="#"><i class="fa fa-instagram"></i>Instagram</a> &nbsp;&nbsp;
+      <a href="#"><i class="fa fa-tiktok"></i>TikTok</a>
+      <p style="margin-top: 1rem;">Copyright &copy; 2023 Critical</p>
+      <hr>
+    </footer>
+
+
+  </body>
+</html>
